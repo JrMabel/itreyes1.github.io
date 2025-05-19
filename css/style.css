@@ -18,6 +18,8 @@ body {
      background: linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(32, 201, 151, 0.9)), url('images/servicios-bg.jpg') center/cover no-repeat; 
     /* background-color: var(--primary-color); */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
     min-height: 70px;
@@ -52,9 +54,6 @@ body {
 .navbar, 
 .container-fluid {
     overflow: visible !important;
-}
-.navbar-collapse.collapsing {
-    transition: none !important; /* Desactiva transiciones para debug */
 }
 
 #navbarNav {
@@ -202,14 +201,14 @@ body {
         top: 70px;
         left: 0;
         right: 0;
-        bottom: 0;
-        background-color: var(--primary-color);
-        z-index: 1000;
+        background: linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(32, 201, 151, 0.9)), url('images/servicios-bg.jpg') center/cover no-repeat;
         padding: 20px;
+        z-index: 1000;
+        height: auto !important;
+        max-height: calc(100vh - 70px);
         overflow-y: auto;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
-        height: calc(60vh - 50px); /* Ocupa toda la altura menos el navbar */
     }
     
     .navbar-collapse.show {
@@ -220,6 +219,7 @@ body {
         margin: 10px 0;
         width: 100%;
     }
+
     
     .nav-link {
         padding: 12px 15px !important;
@@ -255,6 +255,7 @@ body {
 .hero-background {
     position: absolute;
     width: 100%;
+    background-attachment: fixed;
     height: 100%;
     top: 0;
     left: 0;
@@ -484,4 +485,155 @@ body {
     .section {
         padding: 50px 0;
     }
+}
+/* Estilos para el botón de cierre */
+.navbar-close-btn {
+    display: none; /* Oculto por defecto en desktop */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    background: none;
+    border: none;
+}
+
+.navbar-close-btn:hover {
+    color: #2600ff;
+    transform: scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-close-btn {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* Ajuste para el selector de idiomas en móvil */
+    .language-selector-wrapper {
+        margin-right: 40px; /* Espacio para la X */
+    }
+}
+/* Estilos para el botón de cierre */
+.navbar-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.navbar-close-btn:hover {
+    color: #2600ff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-close-btn {
+        display: block;
+    }
+    
+    /* Ajustamos el padding derecho del menú para la X */
+    #navbarNav {
+        padding-right: 50px;
+    }
+    
+    /* Ajustamos el selector de idiomas para que no se solape */
+    .language-selector-wrapper {
+        margin-right: 30px;
+    }
+}
+/* Estilos para el toggler personalizado */
+/* Estilos esenciales para el toggler */
+.custom-toggler {
+    border: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.custom-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Ícono de hamburguesa por defecto */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.5em;
+    height: 1.5em;
+    transition: all 0.3s ease;
+}
+
+/* Ícono de cierre (X) */
+.custom-toggler .close-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    line-height: 1;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Estado expandido */
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    opacity: 0;
+}
+
+.custom-toggler[aria-expanded="true"] .close-icon {
+    opacity: 1;
+}
+
+.custom-toggler[aria-expanded="true"] .close-icon:hover {
+    color: #2600ff;
+}
+
+/* Estilos para el toggler permanente */
+.persistent-toggler {
+    border: none;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.persistent-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Ícono de hamburguesa siempre visible */
+.persistent-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.5em;
+    height: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover opcional */
+.persistent-toggler:hover .navbar-toggler-icon {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Efecto cuando el menú está abierto */
+.persistent-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(90deg);
 }
