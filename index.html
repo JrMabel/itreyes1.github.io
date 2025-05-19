@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Web Profesionales en Suiza | Freelancer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Añade estas librerías en tu head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-3">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="/images/logo.png" alt="Logo Reyes Castellanos" class="logo-img">
+        </a>
+        
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="index.html" data-key="home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="about.html" data-key="about">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="services.html" data-key="services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="contact.html" data-key="contact">Contacto</a>
+                </li>
+                <!-- Selector de idioma -->
+                <li class="nav-item ps-lg-3 mt-3 mt-lg-0">
+                    <div class="language-selector-wrapper position-relative">
+                        <img id="current-language-flag" src="images/idiomas/espanol.png" alt="Idioma" class="language-flag">
+                        <select id="language-selector" class="form-select language-selector-custom" onchange="changeLanguage()">
+                            <option value="es" data-icon="images/idiomas/espanol.png">Español</option> <!-- Español -->
+                            <option value="en" data-icon="images/idiomas/english.png">English</option> <!-- English -->
+                            <option value="it" data-icon="images/idiomas/italiano.png">Italiano</option> <!-- Italiano -->
+                            <option value="de" data-icon="images/idiomas/aleman.png">Deutsch</option> <!-- Deutsch -->
+                            <option value="fr" data-icon="images/idiomas/frances.png">Française</option> <!-- Française -->
+                        </select>
+                        <!-- Solo esta flecha debe permanecer -->
+                        <i class="bi bi-chevron-down dropdown-arrow"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Hero Section -->
+<section class="hero position-relative overflow-hidden py-4">
+    </div>
+    <!-- Fondo animado minimalista -->
+    <div class="hero-background">
+        <div class="circle-animation"></div>
+    </div>
+    
+    <div class="container position-relative z-index-2">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <h1 class="display-5 fw-bold mb-3 animate__animated animate__fadeInUp" data-key="hero-title">
+                    <span class="text-gradient">Soluciones Web</span> en Suiza
+                </h1>
+                <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s" data-key="hero-description">
+                    Diseño único y desarrollo a medida para negocios que buscan destacar online
+                </p>
+                
+        <div class="d-flex justify-content-center flex-wrap gap-2 animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="contact.html" class="btn btn-primary btn-md px-4 rounded-pill" data-key="request-service">
+                <i class="fas fa-paper-plane me-2"></i> Contactar
+            </a>
+            <a href="services.html" class="btn btn-outline-light btn-md px-4 rounded-pill" data-key="view-services">
+                <i class="fas fa-laptop-code me-2"></i> Servicios
+            </a>
+        </div>
+
+
+            </div>
+            
+            <div class="col-lg-5 mt-4 mt-lg-0 animate__animated animate__fadeIn">
+                <div class="web-design-illustration p-3">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="code-line"></div>
+                            <div class="code-line short"></div>
+                            <div class="code-line medium"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Desarrollo Web Detallado -->
+    <section id="desarrollo-web" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img src="/images/servicios/diseno-web.svg" alt="Desarrollo Web" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">Desarrollo Web</span>
+                    <h2 class="display-6 fw-bold mb-4">Sitios Web que Impresionan y Convierten</h2>
+                    <p class="lead mb-4">Creo experiencias digitales únicas que no solo se ven bien, sino que generan resultados para tu negocio.</p>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Diseño Responsivo</h5>
+                            <p class="mb-0 text-muted">Tu sitio se verá perfecto en cualquier dispositivo, desde móviles hasta pantallas grandes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Rendimiento Óptimo</h5>
+                            <p class="mb-0 text-muted">Sitios ultrarrápidos que mejoran la experiencia de usuario y el posicionamiento SEO.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Seguridad Robust</h5>
+                            <p class="mb-0 text-muted">Protección avanzada contra amenazas y vulnerabilidades para tu sitio y datos.</p>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary px-4 py-2 mt-2">Solicitar Desarrollo Web</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aplicaciones de Escritorio -->
+    <section id="aplicaciones" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+                    <img src="images/servicios/procesos.svg" alt="Aplicaciones de Escritorio" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">Software Personalizado</span>
+                    <h2 class="display-6 fw-bold mb-4">Aplicaciones que Optimizan tus Procesos</h2>
+                    <p class="lead mb-4">Desarrollo soluciones de software a medida que automatizan tareas y mejoran la eficiencia operativa.</p>
+                    
+                    <div class="service-process">
+                        <div class="process-step">
+                            <h5>Análisis de Requerimientos</h5>
+                            <p class="text-muted">Identificamos juntos las necesidades específicas de tu negocio para crear la solución perfecta.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <h5>Diseño de Interfaz</h5>
+                            <p class="text-muted">Creación de interfaces intuitivas que tus equipos adoptarán rápidamente.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <h5>Desarrollo e Implementación</h5>
+                            <p class="text-muted">Construcción de la aplicación con los más altos estándares de calidad y la implemento en tu entorno.</p>
+                        </div>
+                        <div class="process-step">
+                            <h5>Pruebas y Lanzamiento</h5>
+                            <p class="text-muted">pruebas funcionales, de rendimiento y usabilidad para garantizar una entrega sin errores. Luego desplegamos la aplicación en producción, lista para usarse.</p>
+                        </div>
+                         <div class="process-step">
+                            <h5>Mantenimiento y Soporte</h5>
+                            <p class="text-muted">soporte continuo, mantenimiento técnico y mejoras evolutivas. Tu aplicación siempre al día y funcionando sin interrupciones.</p>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn btn-primary px-4 py-2 mt-3">Consultar sobre Aplicaciones</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Estilos personalizados para servicios */
+        .hero-services {
+            background: linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(32, 201, 151, 0.9)), url('images/servicios-bg.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .service-icon-container {
+            width: 80px;
+            height: 80px;
+            margin: -40px auto 20px;
+            background: linear-gradient(45deg, #0d6efd, #20c997);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+        }
+        
+        .service-icon {
+            font-size: 30px;
+            color: white;
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #0d6efd, #20c997);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .feature-icon i {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .service-process {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .service-process:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(to bottom, #0d6efd, #20c997);
+        }
+        
+        .process-step {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .process-step:before {
+            content: "";
+            position: absolute;
+            left: -38px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #0d6efd;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #0d6efd;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .tech-item {
+            background: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .testimonial-card {
+            border-left: 4px solid #0d6efd;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card {
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-header {
+            background: linear-gradient(45deg, #0d6efd, #20c997);
+            color: white;
+            padding: 20px;
+        }
+        
+        .pricing-popular {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: #ffc107;
+            color: #212529;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    </style>
+
+<!-- CSS Personalizado -->
+
+    <!-- Servicios Destacados -->
+<!-- Servicios Destacados -->
+<section class="section bg-light py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5 fw-bold mb-4" data-key="services-section-title">Servicios Destacados</h2>
+        <div class="row g-4">
+            <!-- Servicio 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; line-height: 80px;">
+                            <i class="fas fa-paint-brush fa-2x"></i>
+                        </div>
+                        <h5 class="card-title" data-key="web-design">Diseño Web</h5>
+                        <p class="card-text" data-key="web-design-description">Creación de diseños atractivos y funcionales que reflejan la identidad de tu marca y mejoran la experiencia del usuario.</p>
+                        <!-- <a href="services.html#diseno" class="btn btn-outline-primary mt-3" data-key="more-info">Más información</a> -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; line-height: 80px;">
+                            <i class="fas fa-code fa-2x"></i>
+                        </div>
+                        <h5 class="card-title" data-key="web-development">Desarrollo Web</h5>
+                        <p class="card-text" data-key="web-development-description">Desarrollo de sitios web rápidos, seguros y optimizados para todos los dispositivos y motores de búsqueda.</p>
+                        <!-- <a href="services.html#desarrollo" class="btn btn-outline-primary mt-3" data-key="more-info">Más información</a> -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mx-auto mb-4" style="width: 80px; height: 80px; line-height: 80px;">
+                            <i class="fas fa-cogs fa-2x"></i>
+                        </div>
+                        <h5 class="card-title" data-key="web-administration">Administración Web</h5>
+                        <p class="card-text" data-key="web-administration-description">Mantenimiento, actualizaciones y soporte técnico para garantizar que tu sitio web funcione perfectamente.</p>
+                        <!-- <a href="services.html#administracion" class="btn btn-outline-primary mt-3" data-key="more-info">Más información</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="services.html" class="btn btn-primary px-4 py-2" data-key="more-info-services">Ver todos los servicios</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Testimonios -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title fw-bold mb-4" data-key="testimonials-section-title">Clientes Satisfechos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text" data-key="customer-comment1">Excelente trabajo y atención personalizada. Mi sitio web ha aumentado significativamente las consultas de clientes.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex align-items-center">
+                                <img src="/images/jimcas.png" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h6 class="mb-0">Isabel Castellanos</h6>
+                                    <small class="text-muted" data-key="customer-detail1">Dueña de JimCas Consultores, Basel</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text" data-key="customer-comment2">Rápido, profesional y con un excelente entendimiento de lo que necesitábamos para nuestro negocio.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex align-items-center">
+                                <img src="/images/otra.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h6 class="mb-0">Paolino Caruana</h6>
+                                    <small class="text-muted" data-key="customer-detail2">Loli's Arts, Saint-Louis</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text" data-key="customer-comment3">El sitio web que creó para mi consultoría ha sido fundamental para establecer mi presencia profesional.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex align-items-center">
+                                <img src="/images/jimcas.png" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <div>
+                                    <h6 class="mb-0">Carmen Torralbo</h6>
+                                    <small class="text-muted" data-key="customer-detail3">Alma Viva, Gelterkinden</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamado a la acción -->
+<section class="py-4 bg-primary text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="h2 mb-3" data-key="cta-title">¿Listo para llevar tu web al siguiente nivel?</h3>
+                <p class="mb-4 opacity-75" data-key="cta-description">Contáctame hoy para recibir una cotización personalizada.</p>
+                
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <!-- Botón principal -->
+                    <a href="contact.html" class="btn btn-light px-4" data-key="cta-contact">
+                        <i class="fas fa-paper-plane me-2"></i>Solicitar Servicio
+                    </a>
+                    
+                    <!-- Botón de WhatsApp -->
+                    <a href="https://wa.me/41767851011" class="btn btn-success px-4" style="background-color: #25D366; border-color: #25D366;">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </a>
+                    
+                    <!-- Botón de llamada -->
+                    <a href="tel:+41767851011" class="btn btn-outline-light px-4">
+                        <i class="fas fa-phone-alt me-2"></i>
+                        <span data-key="call-me">Llamar Ahora</span>
+                    </a>
+                </div>
+                
+                <!-- Texto de ayuda para desktop -->
+                <p class="small mt-3 opacity-50 d-none d-md-block">
+                    <i class="fas fa-info-circle me-1"></i>
+                    <span data-key="call-out-desktop">En desktop, los botones de contacto abrirán tu aplicación predeterminada</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 data-key="about-me">Sobre Mí</h5>
+                    <p data-key="about-me-shortly">Freelancer profesional especializado en diseño, desarrollo y administración de sitios web para clientes en Suiza.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" data-key="home">Inicio</a></li>
+                        <li class="mb-2"><a href="about.html" data-key="about">Quiénes Somos</a></li>
+                        <li class="mb-2"><a href="services.html" data-key="services">Servicios</a></li>
+                        <li class="mb-2"><a href="contact.html" data-key="contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 data-key="services">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#diseno" data-key="web-design">Diseño Web</a></li>
+                        <li class="mb-2"><a href="services.html#desarrollo" data-key="web-development">Desarrollo Web</a></li>
+                        <li class="mb-2"><a href="services.html#administracion" data-key="web-administration">Administración Web</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 data-key="contact">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2" data-key="my-local-address"><i class="fas fa-map-marker-alt me-2"></i> Basel, Suiza</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +41 76 785 1011</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> Mabel.JR28@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-0 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0" data-key="my-copyright">&copy; 2025 Reyes Castellanos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="me-3" data-key="my-privacy-policy">Política de Privacidad</a>
+                        <a href="#" data-key="service-terms">Términos de Servicio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database-compat.js"></script>
+    <!-- JS personalizado -->
+    <script src="js/app.js"></script>
+
+ <!-- JavaScript para cambiar idioma -->
+ <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+const translations = {
+    es: {
+        "home": "Inicio",
+        "about": "Quiénes Somos",
+        "services": "Servicios",
+        "contact": "Contacto",
+        "hero-title": "Soluciones Web Profesionales en Suiza",
+        "hero-description": "Diseño, desarrollo y administración de páginas web a medida para personas y negocios. Transformo tus ideas en realidad digital.",
+        "request-service": "Solicitar Servicio",
+        "view-services": "Ver Servicios",
+        "services-section-title": "Mis Servicios",
+        "web-design": "Diseño Web",
+        "web-design-description": "Creo diseños atractivos y funcionales que reflejan la identidad de tu marca y mejoran la experiencia del usuario.",
+        "more-info": "Más información",
+        "testimonials-section-title": "Clientes Satisfechos",
+        "cta-title": "¿Listo para llevar tu presencia web al siguiente nivel?",
+        "cta-description": "Contáctame hoy mismo para discutir tu proyecto y recibir una cotización personalizada.",
+        "cta-contact": "Contáctame",
+        "web-development": "Desarrollo Web",
+        "web-development-description": "Desarrollo sitios web rápidos, seguros y optimizados para todos los dispositivos y motores de búsqueda.",
+        "web-administration": "Administración Web",
+        "web-administration-description": "Mantenimiento, actualizaciones y soporte técnico para garantizar que tu sitio web funcione perfectamente.",
+        "more-info-services": "Detalles de Servicios",
+        "customer-comment1": "Excelente trabajo y atención personalizada. Mi sitio web ha aumentado significativamente las consultas de clientes.",
+        "customer-detail1": "Dueña de JimCas Consultores, Basel",
+        "customer-comment2": "Rápido, profesional y con un excelente entendimiento de lo que necesitábamos para nuestro negocio.",
+        "customer-detail2": "Restaurante, Geneva",
+        "customer-comment3": "El sitio web que creó para mi consultoría ha sido fundamental para establecer mi presencia profesional.",
+        "customer-detail3": "Consultora, Lausanne",
+        "about-me": "Sobre Mí",
+        "about-me-shortly": "Freelancer profesional especializado en diseño, desarrollo y administración de sitios web para clientes en Suiza.",
+        "my-local-address": "Basilea, Suiza",
+        "my-copyright": "© Reyes Castellanos. Todos los derechos reservados.",
+        "my-privacy-policy": "Política de Privacidad",
+        "service-terms": "Términos de Servicio",
+        "call-me":"Llame Ahora",
+        "call-out-desktop": "En desktop, los botones de contacto abrirán tu aplicación predeterminada"
+    },
+    en: {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "contact": "Contact",
+        "hero-title": "Professional Web Solutions in Switzerland",
+        "hero-description": "Design, development, and management of custom websites for individuals and businesses. I turn your ideas into digital reality.",
+        "request-service": "Request Service",
+        "view-services": "View Services",
+        "services-section-title": "My Services",
+        "web-design": "Web Design",
+        "web-design-description": "I create attractive and functional designs that reflect your brand identity and improve user experience.",
+        "more-info": "More info",
+        "testimonials-section-title": "Satisfied Clients",
+        "cta-title": "Ready to take your online presence to the next level?",
+        "cta-description": "Contact me today to discuss your project and receive a personalized quote.",
+        "cta-contact": "Contact me",
+        "web-development": "Web Development",
+        "web-development-description": "I develop fast, secure, and optimized websites for all devices and search engines.",
+        "web-administration": "Web Administration",
+        "web-administration-description": "Maintenance, updates, and technical support to ensure your website runs smoothly.",
+        "more-info-services": "Service Details",
+        "customer-comment1": "Excellent work and personalized service. My website has significantly increased customer inquiries.",
+        "customer-detail1": "Owner of JimCas Consultants, Basel",
+        "customer-comment2": "Fast, professional, and with an excellent understanding of what we needed for our business.",
+        "customer-detail2": "Restaurant, Geneva",
+        "customer-comment3": "The website you created for my consulting practice has been instrumental in establishing my professional presence.",
+        "customer-detail3": "Consultant, Lausanne",
+        "about-me": "About Me",
+        "about-me-shortly": "Professional freelancer specialized in web design, development and administration for clients in Switzerland.",
+        "my-local-address": "Basel, Switzerland",
+        "my-copyright": "© 2025 Reyes Castellanos. All rights reserved.",
+        "my-privacy-policy": "Privacy Policy",
+        "service-terms": "Terms of Service",
+        "call-me":"Call Now",
+        "call-out-desktop": "On desktop, the contact buttons will open your default app"
+    },
+    de: {
+        "home": "Startseite",
+        "about": "Über uns",
+        "services": "Dienstleistungen",
+        "contact": "Kontakt",
+        "hero-title": "Professionelle Web-Lösungen in der Schweiz",
+        "hero-description": "Design, Entwicklung und Verwaltung von maßgeschneiderten Websites für Privatpersonen und Unternehmen. Ich verwandle Ihre Ideen in digitale Realität.",
+        "request-service": "Service anfordern",
+        "view-services": "Dienstleistungen ansehen",
+        "services-section-title": "Meine Dienstleistungen",
+        "web-design": "Webdesign",
+        "web-design-description": "Ich erstelle ansprechende und funktionale Designs, die Ihre Markenidentität widerspiegeln und die Benutzererfahrung verbessern.",
+        "more-info": "Mehr Informationen",
+        "testimonials-section-title": "Zufriedene Kunden",
+        "cta-title": "Bereit, Ihre Online-Präsenz auf die nächste Stufe zu heben?",
+        "cta-description": "Kontaktieren Sie mich noch heute, um Ihr Projekt zu besprechen und ein persönliches Angebot zu erhalten.",
+        "cta-contact": "Kontaktieren Sie mich",
+        "web-development": "Webentwicklung",
+        "web-development-description": "Ich entwickle schnelle, sichere und optimierte Websites für alle Geräte und Suchmaschinen.",
+        "web-administration": "Web-Verwaltung",
+        "web-administration-description": "Wartung, Updates und technischer Support, um sicherzustellen, dass Ihre Website reibungslos läuft.",
+        "more-info-services": "Dienstleistungsdetails",
+        "customer-comment1": "Hervorragende Arbeit und persönlicher Service. Meine Website hat die Kundenanfragen deutlich erhöht.",
+        "customer-detail1": "Inhaber von JimCas Consultants, Basel",
+        "customer-comment2": "Schnell, professionell und mit einem ausgezeichneten Verständnis für unsere Geschäftsanforderungen.",
+        "customer-detail2": "Restaurant, Genf",
+        "customer-comment3": "Die von Ihnen erstellte Website für meine Beratungstätigkeit war entscheidend für die Etablierung meiner professionellen Präsenz.",
+        "customer-detail3": "Beraterin, Lausanne",
+        "about-me": "Über mich",
+        "about-me-shortly": "Professioneller Freelancer, spezialisiert auf Webdesign, Entwicklung und Verwaltung für Kunden in der Schweiz.",
+        "my-local-address": "Basel, Schweiz",
+        "my-copyright": "© Reyes Castellanos. Alle Rechte vorbehalten.",
+        "my-privacy-policy": "Datenschutzrichtlinie",
+        "service-terms": "Nutzungsbedingungen",
+        "call-me":"Jetzt Anrufen",
+        "call-out-desktop": "Auf dem Desktop öffnen die Kontaktschaltflächen Ihre Standard-App"
+
+    },
+    fr: {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "contact": "Contact",
+        "hero-title": "Solutions Web Professionnelles en Suisse",
+        "hero-description": "Conception, développement et gestion de sites web personnalisés pour particuliers et entreprises. Je transforme vos idées en réalité numérique.",
+        "request-service": "Demander un Service",
+        "view-services": "Voir les Services",
+        "services-section-title": "Mes Services",
+        "web-design": "Design Web",
+        "web-design-description": "Je crée des designs attrayants et fonctionnels qui reflètent l'identité de votre marque et améliorent l'expérience utilisateur.",
+        "more-info": "Plus d'informations",
+        "testimonials-section-title": "Clients Satisfaits",
+        "cta-title": "Prêt à faire passer votre présence en ligne au niveau supérieur?",
+        "cta-description": "Contactez-moi dès aujourd'hui pour discuter de votre projet et recevoir un devis personnalisé.",
+        "cta-contact": "Contactez-moi",
+        "web-development": "Développement Web",
+        "web-development-description": "Je développe des sites web rapides, sécurisés et optimisés pour tous les appareils et moteurs de recherche.",
+        "web-administration": "Administration Web",
+        "web-administration-description": "Maintenance, mises à jour et support technique pour garantir le bon fonctionnement de votre site web.",
+        "more-info-services": "Détails des Services",
+        "customer-comment1": "Travail excellent et service personnalisé. Mon site web a considérablement augmenté les demandes de clients.",
+        "customer-detail1": "Propriétaire de JimCas Consultants, Bâle",
+        "customer-comment2": "Rapide, professionnel et avec une excellente compréhension de nos besoins commerciaux.",
+        "customer-detail2": "Restaurant, Genève",
+        "customer-comment3": "Le site web que vous avez créé pour mon activité de conseil a été essentiel pour établir ma présence professionnelle.",
+        "customer-detail3": "Consultante, Lausanne",
+        "about-me": "À propos de moi",
+        "about-me-shortly": "Freelance professionnel spécialisé dans la conception, le développement et l'administration de sites web pour des clients en Suisse.",
+        "my-local-address": "Bâle, Suisse",
+        "my-copyright": "© Reyes Castellanos. Tous droits réservés.",
+        "my-privacy-policy": "Politique de Confidentialité",
+        "service-terms": "Conditions de Service",
+        "call-me":"Appelez Maintenant",
+        "call-out-desktop": "Sur le bureau, les boutons de contact ouvriront votre application par défaut"
+    },
+    it: {
+        "home": "Home",
+        "about": "Chi siamo",
+        "services": "Servizi",
+        "contact": "Contatto",
+        "hero-title": "Soluzioni Web Professionali in Svizzera",
+        "hero-description": "Progettazione, sviluppo e gestione di siti web personalizzati per privati e aziende. Trasformo le tue idee in realtà digitale.",
+        "request-service": "Richiedi Servizio",
+        "view-services": "Visualizza Servizi",
+        "services-section-title": "I miei Servizi",
+        "web-design": "Web Design",
+        "web-design-description": "Creo design accattivanti e funzionali che riflettono l'identità del tuo brand e migliorano l'esperienza utente.",
+        "more-info": "Maggiori informazioni",
+        "testimonials-section-title": "Clienti Soddisfatti",
+        "cta-title": "Pronto a portare la tua presenza online al livello successivo?",
+        "cta-description": "Contattami oggi stesso per discutere del tuo progetto e ricevere un preventivo personalizzato.",
+        "cta-contact": "Contattami",
+        "web-development": "Sviluppo Web",
+        "web-development-description": "Sviluppo siti web veloci, sicuri e ottimizzati per tutti i dispositivi e motori di ricerca.",
+        "web-administration": "Amministrazione Web",
+        "web-administration-description": "Manutenzione, aggiornamenti e supporto tecnico per garantire il perfetto funzionamento del tuo sito web.",
+        "more-info-services": "Dettagli Servizi",
+        "customer-comment1": "Lavoro eccellente e servizio personalizzato. Il mio sito web ha aumentato significativamente le richieste dei clienti.",
+        "customer-detail1": "Proprietario di JimCas Consultants, Basilea",
+        "customer-comment2": "Veloce, professionale e con un'ottima comprensione di ciò di cui avevamo bisogno per la nostra attività.",
+        "customer-detail2": "Ristorante, Ginevra",
+        "customer-comment3": "Il sito web che hai creato per la mia attività di consulenza è stato fondamentale per stabilire la mia presenza professionale.",
+        "customer-detail3": "Consulente, Losanna",
+        "about-me": "Su di me",
+        "about-me-shortly": "Freelance professionista specializzato in progettazione, sviluppo e amministrazione di siti web per clienti in Svizzera.",
+        "my-local-address": "Basilea, Svizzera",
+        "my-copyright": "© Reyes Castellanos. Tutti i diritti riservati.",
+        "my-privacy-policy": "Privacy Policy",
+        "service-terms": "Termini di Servizio",
+        "call-me":"Chiama Ora",
+        "call-out-desktop": "Sul desktop, i pulsanti dei contatti apriranno l'app predefinita"
+    }
+};
+
+// Actualizar bandera visible
+function updateFlag() {
+    const selector = document.getElementById('language-selector');
+    const flag = document.getElementById('current-language-flag');
+    const selectedOption = selector.options[selector.selectedIndex];
+    flag.src = selectedOption.getAttribute('data-icon');
+}
+
+// Inicializar
+document.addEventListener('DOMContentLoaded', function() {
+    updateFlag();
+    document.getElementById('language-selector').addEventListener('change', updateFlag);
+});
+
+
+function changeLanguage() {
+    const language = document.getElementById("language-selector").value;
+    const elements = document.querySelectorAll("[data-key]");
+    elements.forEach(function(element) {
+        const key = element.getAttribute("data-key");
+        if (translations[language] && translations[language][key]) {
+            element.textContent = translations[language][key];
+        }
+    });
+    updateFlag(); // Actualizar la bandera visible
+}
+    </script>
+
+</body>
+
+</html>

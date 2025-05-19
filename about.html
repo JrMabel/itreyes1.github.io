@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Web Profesionales en Suiza | Freelancer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Añade estas librerías en tu head -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-3">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="/images/logo.png" alt="Logo Reyes Castellanos" class="logo-img">
+        </a>
+        
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="index.html" data-key="home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="about.html" data-key="about">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="services.html" data-key="services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="contact.html" data-key="contact">Contacto</a>
+                </li>
+                <!-- Selector de idioma -->
+                <li class="nav-item ps-lg-3 mt-3 mt-lg-0">
+                    <div class="language-selector-wrapper position-relative">
+                        <img id="current-language-flag" src="images/idiomas/espanol.png" alt="Idioma" class="language-flag">
+                        <select id="language-selector" class="form-select language-selector-custom" onchange="changeLanguage()">
+                            <option value="es" data-icon="images/idiomas/espanol.png">Español</option> <!-- Español -->
+                            <option value="en" data-icon="images/idiomas/english.png">English</option> <!-- English -->
+                            <option value="it" data-icon="images/idiomas/italiano.png">Italiano</option> <!-- Italiano -->
+                            <option value="de" data-icon="images/idiomas/aleman.png">Deutsch</option> <!-- Deutsch -->
+                            <option value="fr" data-icon="images/idiomas/frances.png">Française</option> <!-- Française -->
+                        </select>
+                        <!-- Solo esta flecha debe permanecer -->
+                        <i class="bi bi-chevron-down dropdown-arrow"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+<section class="hero position-relative overflow-hidden py-4">
+    </div>
+    <!-- Fondo animado minimalista -->
+    <div class="hero-background">
+        <div class="circle-animation"></div>
+    </div>
+    
+    <div class="container position-relative z-index-2">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <h1 class="display-5 fw-bold mb-3 animate__animated animate__fadeInUp" data-key="hero-title">
+                    <span class="text-gradient">Soluciones Web</span> en Suiza
+                </h1>
+                <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s" data-key="hero-description">
+                    Diseño único y desarrollo a medida para negocios que buscan destacar online
+                </p>
+                
+        <div class="d-flex justify-content-center flex-wrap gap-2 animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="contact.html" class="btn btn-primary btn-md px-4 rounded-pill" data-key="request-service">
+                <i class="fas fa-paper-plane me-2"></i> Contactar
+            </a>
+            <a href="services.html" class="btn btn-outline-light btn-md px-4 rounded-pill" data-key="view-services">
+                <i class="fas fa-laptop-code me-2"></i> Servicios
+            </a>
+        </div>
+
+
+            </div>
+            
+            <div class="col-lg-5 mt-4 mt-lg-0 animate__animated animate__fadeIn">
+                <div class="web-design-illustration p-3">
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="code-line"></div>
+                            <div class="code-line short"></div>
+                            <div class="code-line medium"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS Personalizado -->
+<style>
+
+</style>
+
+   <!-- Sobre Mí (Versión Mejorada) -->
+<section class="section bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="ps-lg-4">
+                    <h2 class="section-title mb-4 text-gradient-primary fw-bold mb-4">Experiencia Multidisciplinaria para Soluciones Integrales</h2>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="flex-shrink-0 text-primary me-3">
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Diseño, Desarrollo y Administración Web</h5>
+                            <p class="mb-0">7+ años creando soluciones digitales personalizadas con tecnologías modernas y enfoque en experiencia de usuario para el sector militar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="flex-shrink-0 text-primary me-3">
+                            <i class="fas fa-cogs fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Especialista en Configure, Price, Quote (CPQ)</h5>
+                            <p class="mb-0">Experiencia probada en sistemas de configuración, precios y cotizaciones para el sector eléctrico-industrial.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="flex-shrink-0 text-primary me-3">
+                            <i class="fas fa-handshake fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Atención al Cliente</h5>
+                            <p class="mb-0">Atención telefónica en asistencia vial nacional y médica internacional para aseguradoras. Resolución de emergencias con trato empático, ágil y adaptado a distintos perfiles de clientes.</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="skills-progress mt-4">
+                        <h6 class="mb-3">Tecnologías que me definen:</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%">HTML/CSS/JavaScript/SQL/C#/Visual Basic</div>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%">Frameworks y Librerias Modernas (BootStrap/JQuery/Vue)</div>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%">Herramientas y Entornos CPQ (Salesforce/PickWork Bench/Visual Studio/Git/Github/Bid Manager)</div>
+                        </div>
+                            <div class="progress mb-3">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%">Diseño Web / UI (Responsive Design/Accesibilidad Web)</div>
+                        </div>
+                    </div>
+                    
+                    
+<!--                        <div class="mt-4"> <a href="#contacto" class="btn btn-primary me-2">Contáctame</a>
+                            <a href="#portafolio" class="btn btn-outline-primary">Ver Curriculum Vitae</a>
+                    </div>-->                        
+<!-- 
+                <div class="mt-4 d-flex flex-wrap gap-2">
+                    <a href="tu-cv.pdf" class="btn btn-outline-primary" target="_blank" download>
+                        <i class="bi bi-download me-1"></i> Descargar CV
+                    </a>
+
+                    <a href="tu-cv.pdf" class="btn btn-outline-secondary" target="_blank">
+                        <i class="bi bi-eye me-1"></i> Ver Online
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mabel-jim%C3%A9nez-reyes-9b324813a/" class="btn btn-outline-info" target="_blank">
+                        <i class="bi bi-linkedin me-1"></i> Ver LinkedIn
+                    </a>
+                </div> -->
+
+                </div>
+            </div>
+            
+            <div class="col-lg-6 order-lg-1 mt-4 mt-lg-0">
+                <div class="position-relative">
+                    <img src="/images/mifoto.jpg" alt="Experto en desarrollo web y soluciones CPQ" class="img-fluid rounded shadow-lg">
+                    <div class="experience-badge bg-primary text-white rounded-pill px-3 py-1 shadow">
+                        <i class="fas fa-award me-2"></i>7+ Años de Experiencia
+                    </div>
+                    <div class="client-logos mt-4">
+                        <h6 class="text-muted mb-3">He trabajado en los sectores:</h6>
+                        <div class="d-flex flex-wrap gap-3">
+                            <div class="bg-white p-2 rounded shadow-sm"><i class="fas fa-industry text-primary me-2"></i>Industrial</div>
+                            <div class="bg-white p-2 rounded shadow-sm"><i class="fas fa-bolt text-primary me-2"></i>Eléctrico</div>
+                            <div class="bg-white p-2 rounded shadow-sm"><i class="fas fa-shield-alt text-primary me-2"></i>Militar</div>
+                            <div class="bg-white p-2 rounded shadow-sm"><i class="fas fa-handshake text-primary me-2"></i></i>Seguros</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .text-gradient-primary {
+        background: linear-gradient(45deg, #0d6efd, #20c997);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    .experience-badge {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        font-weight: 600;
+    }
+    .progress-bar {
+        transition: width 2s ease-in-out;
+    }
+    .section {
+        scroll-margin-top: 80px;
+    }
+</style>
+
+
+    <!-- Llamado a la acción -->
+<section class="py-4 bg-primary text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="h2 mb-3" data-key="cta-title">¿Listo para llevar tu web al siguiente nivel?</h3>
+                <p class="mb-4 opacity-75" data-key="cta-description">Contáctame hoy para recibir una cotización personalizada.</p>
+                
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <!-- Botón principal -->
+                    <a href="contact.html" class="btn btn-light px-4" data-key="cta-contact">
+                        <i class="fas fa-paper-plane me-2"></i>Solicitar Servicio
+                    </a>
+                    
+                    <!-- Botón de WhatsApp -->
+                    <a href="https://wa.me/41767851011" class="btn btn-success px-4" style="background-color: #25D366; border-color: #25D366;">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </a>
+                    
+                    <!-- Botón de llamada -->
+                    <a href="tel:+41767851011" class="btn btn-outline-light px-4">
+                        <i class="fas fa-phone-alt me-2"></i>
+                        <span data-key="call-me">Llamar Ahora</span>
+                    </a>
+                </div>
+                
+                <!-- Texto de ayuda para desktop -->
+                <p class="small mt-3 opacity-50 d-none d-md-block">
+                    <i class="fas fa-info-circle me-1" data-key="call-out-desktop"></i> En desktop, los botones de contacto abrirán tu aplicación predeterminada
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Sobre Mí</h5>
+                    <p>Freelancer profesional especializado en diseño, desarrollo y administración de sitios web para clientes en Suiza.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Inicio</a></li>
+                        <li class="mb-2"><a href="about.html">Quiénes Somos</a></li>
+                        <li class="mb-2"><a href="services.html">Servicios</a></li>
+                        <li class="mb-2"><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#diseno">Diseño Web</a></li>
+                        <li class="mb-2"><a href="services.html#desarrollo">Desarrollo Web</a></li>
+                        <li class="mb-2"><a href="services.html#administracion">Administración Web</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Basel, Suiza</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +41 76 785 1011</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> Mabel.JR28@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-0 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Reyes Castellanos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="me-3">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database-compat.js"></script>
+    <!-- JS personalizado -->
+    <script src="js/app.js"></script>
+</body>
+</html>
