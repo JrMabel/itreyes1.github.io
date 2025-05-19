@@ -63,7 +63,7 @@ body {
 }
 @media (max-width: 991.98px) {
     #navbarNav {
-        background: rgba(0, 0, 0, 0.95); /* Fondo oscuro */
+     background: linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(32, 201, 151, 0.9)), url('images/servicios-bg.jpg') center/cover no-repeat; 
         padding: 1rem;
         margin-top: 0.5rem;
         border-radius: 5px;
@@ -209,6 +209,7 @@ body {
         overflow-y: auto;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
+        height: calc(60vh - 50px); /* Ocupa toda la altura menos el navbar */
     }
     
     .navbar-collapse.show {
@@ -218,13 +219,13 @@ body {
     .nav-item {
         margin: 10px 0;
         width: 100%;
-        white-space: normal; /* Permite múltiples líneas en móvil si es necesario */
     }
     
     .nav-link {
-        padding: 10px 15px !important;
+        padding: 12px 15px !important;
         border-bottom: 1px solid rgba(255,255,255,0.1);
-        display: block; /* Cambio a bloque en móvil */
+        display: block;
+        font-size: 1.1rem; /* Tamaño de fuente más grande */
     }
     
     .nav-link::after {
@@ -232,7 +233,7 @@ body {
     }
     
     .language-selector-wrapper {
-        margin: 15px 0 0 0;
+        margin: 20px 0;
         width: 100%;
     }
     
