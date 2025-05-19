@@ -37,6 +37,42 @@ body {
     margin-right: 2rem !important;
 }
 
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus {
+    box-shadow: none; /* Quita el outline al hacer clic */
+}
+.navbar-collapse {
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.navbar, 
+.container-fluid {
+    overflow: visible !important;
+}
+.navbar-collapse.collapsing {
+    transition: none !important; /* Desactiva transiciones para debug */
+}
+
+#navbarNav {
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+@media (max-width: 991.98px) {
+    #navbarNav {
+        background: rgba(0, 0, 0, 0.95); /* Fondo oscuro */
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 5px;
+    }
+    .nav-link {
+        color: white !important; /* Texto visible */
+    }
+}
+
 .logo-img {
     max-height: 90px;
     width: auto;
