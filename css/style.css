@@ -560,12 +560,13 @@ body {
 /* Estilos para el toggler personalizado */
 /* Estilos esenciales para el toggler */
 .custom-toggler {
-    border: none;
-    padding: 0.5rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    transition: all 0.3s ease;
+  border: none;
+  padding: 0.5rem;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background: transparent !important;
+  transition: all 0.3s ease;
 }
 
 .custom-toggler:focus {
@@ -636,4 +637,55 @@ body {
 /* Efecto cuando el menú está abierto */
 .persistent-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: rotate(90deg);
+}
+/* Icono de hamburguesa (tres líneas) */
+.custom-toggler .hamburger-icon {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: white;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.custom-toggler .hamburger-icon::before,
+.custom-toggler .hamburger-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: white;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.custom-toggler .hamburger-icon::before {
+  top: -8px;
+}
+
+.custom-toggler .hamburger-icon::after {
+  top: 8px;
+}
+
+/* Estado cuando el menú está abierto */
+.custom-toggler[aria-expanded="true"] .hamburger-icon {
+  background: transparent;
+}
+
+.custom-toggler[aria-expanded="true"] .hamburger-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.custom-toggler[aria-expanded="true"] .hamburger-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* Oculta el icono por defecto de Bootstrap */
+.custom-toggler .navbar-toggler-icon {
+  display: none !important;
 }
