@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
     <link rel="icon" href="images/logo.png" type="image/png">
+    <script src="funciones.js" defer></script>
     <style>
         /* Estilos personalizados para servicios */
         .hero-services {
@@ -563,5 +564,36 @@
             });
         });
     </script>
+     
+ <!-- AQUI INICIA EL CHATBOT -->
+ <!-- Botón para abrir el chatbot con notificación -->
+    <button id="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+        <span class="notification-badge" id="chatbot-notification" style="display: none;">1</span>
+    </button>
+    
+    <!-- Contenedor del chatbot -->
+    <div id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>Asistente Virtual</span>
+            </div>
+            <button class="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Los mensajes se agregarán aquí dinámicamente -->
+        </div>
+        
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-user-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+            <button id="chatbot-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
