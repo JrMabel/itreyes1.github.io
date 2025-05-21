@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="funciones.js" defer></script>
 </head>
 <body>
     
@@ -442,5 +443,36 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     <script src="js/app.js"></script>
     <script src="js/translations.js"></script>
 
+     
+ <!-- AQUI INICIA EL CHATBOT -->
+ <!-- Botón para abrir el chatbot con notificación -->
+    <button id="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+        <span class="notification-badge" id="chatbot-notification" style="display: none;">1</span>
+    </button>
+    
+    <!-- Contenedor del chatbot -->
+    <div id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>Asistente Virtual</span>
+            </div>
+            <button class="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Los mensajes se agregarán aquí dinámicamente -->
+        </div>
+        
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-user-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+            <button id="chatbot-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
