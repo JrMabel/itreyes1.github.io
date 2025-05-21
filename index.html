@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+<script src="funciones.js" defer></script>
 </head>
 <body>
 
@@ -132,7 +133,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="images/servicios/diseno-web.svg" alt="Desarrollo Web" class="img-fluid rounded-3 shadow">
+                    <img src="/images/servicios/diseno-web.svg" alt="Desarrollo Web" class="img-fluid rounded-3 shadow">
                 </div>
                 <div class="col-lg-6">
                     <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 mb-3">Desarrollo Web</span>
@@ -443,7 +444,7 @@
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="d-flex align-items-center">
-                                <img src="images/jimcas.png" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <img src="/images/jimcas.png" alt="Cliente" class="rounded-circle me-3" width="50">
                                 <div>
                                     <h6 class="mb-0">Isabel Castellanos</h6>
                                     <small class="text-muted" data-key="customer-detail1">Dueña de JimCas Consultores, Basel</small>
@@ -466,7 +467,7 @@
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="d-flex align-items-center">
-                                <img src="images/otra.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <img src="/images/otra.jpg" alt="Cliente" class="rounded-circle me-3" width="50">
                                 <div>
                                     <h6 class="mb-0">Paolino Caruana</h6>
                                     <small class="text-muted" data-key="customer-detail2">Loli's Arts, Saint-Louis</small>
@@ -489,7 +490,7 @@
                         </div>
                         <div class="card-footer bg-transparent">
                             <div class="d-flex align-items-center">
-                                <img src="images/jimcas.png" alt="Cliente" class="rounded-circle me-3" width="50">
+                                <img src="/images/jimcas.png" alt="Cliente" class="rounded-circle me-3" width="50">
                                 <div>
                                     <h6 class="mb-0">Carmen Torralbo</h6>
                                     <small class="text-muted" data-key="customer-detail3">Alma Viva, Gelterkinden</small>
@@ -571,9 +572,6 @@
                         <li class="mb-2"><a href="services.html#desktopapps" data-key="desktop-apps">Aplicaciones de Escritorio</a></li>
                         <li class="mb-2"><a href="services.html#desktopapps" data-key="mobile-apps">Aplicaciones Móviles</a></li>
                        <li class="mb-2"><a href="services.html#desktopapps" data-key="mobile-apps">Integraciones & Salesforce CPQ</a></li>
-
-
-
                     </ul>
                 </div>
                 <div class="col-lg-3 mb-4">
@@ -611,292 +609,44 @@
  <!-- JavaScript para cambiar idioma -->
  <!-- Scripts -->
     <script src="js/main.js"></script>
-
-    <script>
-const translations = {
-    es: {
-        "home": "Inicio",
-        "about": "Quiénes Somos",
-        "services": "Servicios",
-        "contact": "Contacto",
-        "hero-title": "Soluciones Web Profesionales en Suiza",
-        "hero-description": "Diseño, desarrollo y administración de páginas web a medida para personas y negocios. Transformo tus ideas en realidad digital.",
-        "request-service": "Solicitar Servicio",
-        "view-services": "Ver Servicios",
-        "services-section-title": "Mis Servicios",
-        "web-design": "Diseño Web",
-        "web-design-description": "Creo diseños atractivos y funcionales que reflejan la identidad de tu marca y mejoran la experiencia del usuario.",
-        "more-info": "Más información",
-        "testimonials-section-title": "Clientes Satisfechos",
-        "cta-title": "¿Listo para llevar tu presencia web al siguiente nivel?",
-        "cta-description": "Contáctame hoy mismo para discutir tu proyecto y recibir una cotización personalizada.",
-        "cta-contact": "Contáctame",
-        "web-development": "Desarrollo Web",
-        "web-development-description": "Desarrollo sitios web rápidos, seguros y optimizados para todos los dispositivos y motores de búsqueda.",
-        "web-administration": "Administración Web",
-        "web-administration-description": "Mantenimiento, actualizaciones y soporte técnico para garantizar que tu sitio web funcione perfectamente.",
-        "more-info-services": "Detalles de Servicios",
-        "customer-comment1": "Excelente trabajo y atención personalizada. Mi sitio web ha aumentado significativamente las consultas de clientes.",
-        "customer-detail1": "Dueña de JimCas Consultores, Basel",
-        "customer-comment2": "Rápido, profesional y con un excelente entendimiento de lo que necesitábamos para nuestro negocio.",
-        "customer-detail2": "Restaurante, Geneva",
-        "customer-comment3": "El sitio web que creó para mi consultoría ha sido fundamental para establecer mi presencia profesional.",
-        "customer-detail3": "Consultora, Lausanne",
-        "about-me": "Sobre Mí",
-        "about-me-shortly": "Freelancer profesional especializado en diseño, desarrollo y administración de sitios web para clientes en Suiza.",
-        "my-local-address": "Basilea, Suiza",
-        "my-copyright": "© Reyes Castellanos. Todos los derechos reservados.",
-        "my-privacy-policy": "Política de Privacidad",
-        "service-terms": "Términos de Servicio",
-        "call-me":"Llame Ahora",
-        "call-out-desktop": "En desktop, los botones de contacto abrirán tu aplicación predeterminada"
-    },
-    en: {
-        "home": "Home",
-        "about": "About Us",
-        "services": "Services",
-        "contact": "Contact",
-        "hero-title": "Professional Web Solutions in Switzerland",
-        "hero-description": "Design, development, and management of custom websites for individuals and businesses. I turn your ideas into digital reality.",
-        "request-service": "Request Service",
-        "view-services": "View Services",
-        "services-section-title": "My Services",
-        "web-design": "Web Design",
-        "web-design-description": "I create attractive and functional designs that reflect your brand identity and improve user experience.",
-        "more-info": "More info",
-        "testimonials-section-title": "Satisfied Clients",
-        "cta-title": "Ready to take your online presence to the next level?",
-        "cta-description": "Contact me today to discuss your project and receive a personalized quote.",
-        "cta-contact": "Contact me",
-        "web-development": "Web Development",
-        "web-development-description": "I develop fast, secure, and optimized websites for all devices and search engines.",
-        "web-administration": "Web Administration",
-        "web-administration-description": "Maintenance, updates, and technical support to ensure your website runs smoothly.",
-        "more-info-services": "Service Details",
-        "customer-comment1": "Excellent work and personalized service. My website has significantly increased customer inquiries.",
-        "customer-detail1": "Owner of JimCas Consultants, Basel",
-        "customer-comment2": "Fast, professional, and with an excellent understanding of what we needed for our business.",
-        "customer-detail2": "Restaurant, Geneva",
-        "customer-comment3": "The website you created for my consulting practice has been instrumental in establishing my professional presence.",
-        "customer-detail3": "Consultant, Lausanne",
-        "about-me": "About Me",
-        "about-me-shortly": "Professional freelancer specialized in web design, development and administration for clients in Switzerland.",
-        "my-local-address": "Basel, Switzerland",
-        "my-copyright": "© 2025 Reyes Castellanos. All rights reserved.",
-        "my-privacy-policy": "Privacy Policy",
-        "service-terms": "Terms of Service",
-        "call-me":"Call Now",
-        "call-out-desktop": "On desktop, the contact buttons will open your default app"
-    },
-    de: {
-        "home": "Startseite",
-        "about": "Über uns",
-        "services": "Dienstleistungen",
-        "contact": "Kontakt",
-        "hero-title": "Professionelle Web-Lösungen in der Schweiz",
-        "hero-description": "Design, Entwicklung und Verwaltung von maßgeschneiderten Websites für Privatpersonen und Unternehmen. Ich verwandle Ihre Ideen in digitale Realität.",
-        "request-service": "Service anfordern",
-        "view-services": "Dienstleistungen ansehen",
-        "services-section-title": "Meine Dienstleistungen",
-        "web-design": "Webdesign",
-        "web-design-description": "Ich erstelle ansprechende und funktionale Designs, die Ihre Markenidentität widerspiegeln und die Benutzererfahrung verbessern.",
-        "more-info": "Mehr Informationen",
-        "testimonials-section-title": "Zufriedene Kunden",
-        "cta-title": "Bereit, Ihre Online-Präsenz auf die nächste Stufe zu heben?",
-        "cta-description": "Kontaktieren Sie mich noch heute, um Ihr Projekt zu besprechen und ein persönliches Angebot zu erhalten.",
-        "cta-contact": "Kontaktieren Sie mich",
-        "web-development": "Webentwicklung",
-        "web-development-description": "Ich entwickle schnelle, sichere und optimierte Websites für alle Geräte und Suchmaschinen.",
-        "web-administration": "Web-Verwaltung",
-        "web-administration-description": "Wartung, Updates und technischer Support, um sicherzustellen, dass Ihre Website reibungslos läuft.",
-        "more-info-services": "Dienstleistungsdetails",
-        "customer-comment1": "Hervorragende Arbeit und persönlicher Service. Meine Website hat die Kundenanfragen deutlich erhöht.",
-        "customer-detail1": "Inhaber von JimCas Consultants, Basel",
-        "customer-comment2": "Schnell, professionell und mit einem ausgezeichneten Verständnis für unsere Geschäftsanforderungen.",
-        "customer-detail2": "Restaurant, Genf",
-        "customer-comment3": "Die von Ihnen erstellte Website für meine Beratungstätigkeit war entscheidend für die Etablierung meiner professionellen Präsenz.",
-        "customer-detail3": "Beraterin, Lausanne",
-        "about-me": "Über mich",
-        "about-me-shortly": "Professioneller Freelancer, spezialisiert auf Webdesign, Entwicklung und Verwaltung für Kunden in der Schweiz.",
-        "my-local-address": "Basel, Schweiz",
-        "my-copyright": "© Reyes Castellanos. Alle Rechte vorbehalten.",
-        "my-privacy-policy": "Datenschutzrichtlinie",
-        "service-terms": "Nutzungsbedingungen",
-        "call-me":"Jetzt Anrufen",
-        "call-out-desktop": "Auf dem Desktop öffnen die Kontaktschaltflächen Ihre Standard-App"
-
-    },
-    fr: {
-        "home": "Accueil",
-        "about": "À propos",
-        "services": "Services",
-        "contact": "Contact",
-        "hero-title": "Solutions Web Professionnelles en Suisse",
-        "hero-description": "Conception, développement et gestion de sites web personnalisés pour particuliers et entreprises. Je transforme vos idées en réalité numérique.",
-        "request-service": "Demander un Service",
-        "view-services": "Voir les Services",
-        "services-section-title": "Mes Services",
-        "web-design": "Design Web",
-        "web-design-description": "Je crée des designs attrayants et fonctionnels qui reflètent l'identité de votre marque et améliorent l'expérience utilisateur.",
-        "more-info": "Plus d'informations",
-        "testimonials-section-title": "Clients Satisfaits",
-        "cta-title": "Prêt à faire passer votre présence en ligne au niveau supérieur?",
-        "cta-description": "Contactez-moi dès aujourd'hui pour discuter de votre projet et recevoir un devis personnalisé.",
-        "cta-contact": "Contactez-moi",
-        "web-development": "Développement Web",
-        "web-development-description": "Je développe des sites web rapides, sécurisés et optimisés pour tous les appareils et moteurs de recherche.",
-        "web-administration": "Administration Web",
-        "web-administration-description": "Maintenance, mises à jour et support technique pour garantir le bon fonctionnement de votre site web.",
-        "more-info-services": "Détails des Services",
-        "customer-comment1": "Travail excellent et service personnalisé. Mon site web a considérablement augmenté les demandes de clients.",
-        "customer-detail1": "Propriétaire de JimCas Consultants, Bâle",
-        "customer-comment2": "Rapide, professionnel et avec une excellente compréhension de nos besoins commerciaux.",
-        "customer-detail2": "Restaurant, Genève",
-        "customer-comment3": "Le site web que vous avez créé pour mon activité de conseil a été essentiel pour établir ma présence professionnelle.",
-        "customer-detail3": "Consultante, Lausanne",
-        "about-me": "À propos de moi",
-        "about-me-shortly": "Freelance professionnel spécialisé dans la conception, le développement et l'administration de sites web pour des clients en Suisse.",
-        "my-local-address": "Bâle, Suisse",
-        "my-copyright": "© Reyes Castellanos. Tous droits réservés.",
-        "my-privacy-policy": "Politique de Confidentialité",
-        "service-terms": "Conditions de Service",
-        "call-me":"Appelez Maintenant",
-        "call-out-desktop": "Sur le bureau, les boutons de contact ouvriront votre application par défaut"
-    },
-    it: {
-        "home": "Home",
-        "about": "Chi siamo",
-        "services": "Servizi",
-        "contact": "Contatto",
-        "hero-title": "Soluzioni Web Professionali in Svizzera",
-        "hero-description": "Progettazione, sviluppo e gestione di siti web personalizzati per privati e aziende. Trasformo le tue idee in realtà digitale.",
-        "request-service": "Richiedi Servizio",
-        "view-services": "Visualizza Servizi",
-        "services-section-title": "I miei Servizi",
-        "web-design": "Web Design",
-        "web-design-description": "Creo design accattivanti e funzionali che riflettono l'identità del tuo brand e migliorano l'esperienza utente.",
-        "more-info": "Maggiori informazioni",
-        "testimonials-section-title": "Clienti Soddisfatti",
-        "cta-title": "Pronto a portare la tua presenza online al livello successivo?",
-        "cta-description": "Contattami oggi stesso per discutere del tuo progetto e ricevere un preventivo personalizzato.",
-        "cta-contact": "Contattami",
-        "web-development": "Sviluppo Web",
-        "web-development-description": "Sviluppo siti web veloci, sicuri e ottimizzati per tutti i dispositivi e motori di ricerca.",
-        "web-administration": "Amministrazione Web",
-        "web-administration-description": "Manutenzione, aggiornamenti e supporto tecnico per garantire il perfetto funzionamento del tuo sito web.",
-        "more-info-services": "Dettagli Servizi",
-        "customer-comment1": "Lavoro eccellente e servizio personalizzato. Il mio sito web ha aumentato significativamente le richieste dei clienti.",
-        "customer-detail1": "Proprietario di JimCas Consultants, Basilea",
-        "customer-comment2": "Veloce, professionale e con un'ottima comprensione di ciò di cui avevamo bisogno per la nostra attività.",
-        "customer-detail2": "Ristorante, Ginevra",
-        "customer-comment3": "Il sito web che hai creato per la mia attività di consulenza è stato fondamentale per stabilire la mia presenza professionale.",
-        "customer-detail3": "Consulente, Losanna",
-        "about-me": "Su di me",
-        "about-me-shortly": "Freelance professionista specializzato in progettazione, sviluppo e amministrazione di siti web per clienti in Svizzera.",
-        "my-local-address": "Basilea, Svizzera",
-        "my-copyright": "© Reyes Castellanos. Tutti i diritti riservati.",
-        "my-privacy-policy": "Privacy Policy",
-        "service-terms": "Termini di Servizio",
-        "call-me":"Chiama Ora",
-        "call-out-desktop": "Sul desktop, i pulsanti dei contatti apriranno l'app predefinita"
-    }
-};
-
-// Actualizar bandera visible
-function updateFlag() {
-    const selector = document.getElementById('language-selector');
-    const flag = document.getElementById('current-language-flag');
-    const selectedOption = selector.options[selector.selectedIndex];
-    flag.src = selectedOption.getAttribute('data-icon');
-}
-
-// Inicializar
-document.addEventListener('DOMContentLoaded', function() {
-    updateFlag();
-    document.getElementById('language-selector').addEventListener('change', updateFlag);
-});
-
-
-function changeLanguage() {
-    const language = document.getElementById("language-selector").value;
-    const elements = document.querySelectorAll("[data-key]");
-    elements.forEach(function(element) {
-        const key = element.getAttribute("data-key");
-        if (translations[language] && translations[language][key]) {
-            element.textContent = translations[language][key];
-        }
-    });
-    updateFlag(); // Actualizar la bandera visible
-}
-    </script>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
+ <!-- AQUI INICIA EL CHATBOT -->
+
+
+ <!-- Botón para abrir el chatbot con notificación -->
+    <button id="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+        <span class="notification-badge" id="chatbot-notification" style="display: none;">1</span>
+    </button>
+    
+    <!-- Contenedor del chatbot -->
+    <div id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>Asistente Virtual</span>
+            </div>
+            <button class="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Los mensajes se agregarán aquí dinámicamente -->
+        </div>
+        
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-user-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+            <button id="chatbot-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
 
 </body>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const navbarToggler = document.querySelector('.custom-toggler');
-    const navbarCollapse = document.getElementById('navbarNav');
-    
-    if (navbarToggler && navbarCollapse) {
-        // Inicializar el menú colapsable de Bootstrap
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-            toggle: false
-        });
-        
-        // Manejar clic en el toggler
-        navbarToggler.addEventListener('click', function() {
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            
-            if (isExpanded) {
-                // Cerrar el menú si está abierto
-                bsCollapse.hide();
-            } else {
-                // Abrir el menú si está cerrado
-                bsCollapse.show();
-            }
-        });
-        
-        // Actualizar estado cuando Bootstrap complete la animación
-        navbarCollapse.addEventListener('shown.bs.collapse', function() {
-            navbarToggler.setAttribute('aria-expanded', 'true');
-        });
-        
-        navbarCollapse.addEventListener('hidden.bs.collapse', function() {
-            navbarToggler.setAttribute('aria-expanded', 'false');
-        });
-        
-        // Cerrar menú al hacer clic en enlaces (opcional para móviles)
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth < 992) {
-                    bsCollapse.hide();
-                }
-            });
-        });
-    }
-});
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const navbarCollapse = document.getElementById('navbarNav');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth < 992) {
-                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-                if (bsCollapse) {
-                    bsCollapse.hide();
-                }
-            }
-        });
-    });
-});
-</script>
 </html>
